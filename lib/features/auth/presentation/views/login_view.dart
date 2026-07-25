@@ -6,6 +6,7 @@ import 'package:login/core/constants/app_text_styles.dart';
 import 'package:login/core/widgets/custom_button.dart';
 import 'package:login/core/widgets/custom_text_field.dart';
 import 'package:login/core/widgets/divider_with_text.dart';
+import 'package:login/features/auth/presentation/widgets/login_bottom_sign_up_text_widget.dart';
 import 'package:login/features/auth/presentation/widgets/login_header_widget.dart';
 
 class LoginView extends StatefulWidget {
@@ -144,6 +145,9 @@ class _LoginViewState extends State<LoginView> {
                       onPressed: () {},
                     ),
                     const SizedBox(height: AppSpacing.md),
+
+                    // Bottom Sign Up Text
+                    const LoginBottomSignUpTextWidget(),
                   ],
                 ),
               ),
