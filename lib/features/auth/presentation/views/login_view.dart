@@ -4,6 +4,7 @@ import 'package:login/core/constants/app_constants.dart';
 import 'package:login/core/constants/app_text_styles.dart';
 import 'package:login/core/widgets/custom_button.dart';
 import 'package:login/core/widgets/custom_text_field.dart';
+import 'package:login/core/widgets/divider_with_text.dart';
 import 'package:login/features/auth/presentation/widgets/login_header_widget.dart';
 
 class LoginView extends StatefulWidget {
@@ -106,6 +107,9 @@ class _LoginViewState extends State<LoginView> {
                         }
                       },
                     ),
+                    const SizedBox(height: AppSpacing.md),
+
+                    const DividerWithText(text: 'Or continue with'),
                     const SizedBox(height: AppSpacing.md),
                   ],
                 ),
