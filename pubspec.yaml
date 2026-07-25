@@ -37,6 +37,7 @@ dependencies:
 
   # Renders the crisp, multi-color Google & Apple brand logos from vectors.
   flutter_svg: ^2.0.10+1
+  device_preview: ^1.2.0
 
 dev_dependencies:
   flutter_test:
