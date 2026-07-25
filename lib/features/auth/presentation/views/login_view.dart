@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:login/core/constants/app_colors.dart';
 import 'package:login/core/constants/app_constants.dart';
 import 'package:login/core/constants/app_text_styles.dart';
@@ -110,6 +111,38 @@ class _LoginViewState extends State<LoginView> {
                     const SizedBox(height: AppSpacing.md),
 
                     const DividerWithText(text: 'Or continue with'),
+                    const SizedBox(height: AppSpacing.md),
+
+                    // Google Login
+                    CustomButton(
+                      text: 'Continue with Google',
+                      backgroundColor: Colors.white,
+                      textColor: AppColors.black,
+                      icon: SvgPicture.asset(
+                        AppAssets.googleLogo,
+                        width: 24,
+                        height: 24,
+                      ),
+                      onPressed: () {},
+                    ),
+                    const SizedBox(height: AppSpacing.md),
+
+                    // Apple Login
+                    CustomButton(
+                      text: 'Continue with Apple',
+                      backgroundColor: AppColors.black,
+                      textColor: Colors.white,
+                      icon: SvgPicture.asset(
+                        AppAssets.appleLogo,
+                        colorFilter: const ColorFilter.mode(
+                          AppColors.white,
+                          BlendMode.srcIn,
+                        ),
+                        width: 24,
+                        height: 24,
+                      ),
+                      onPressed: () {},
+                    ),
                     const SizedBox(height: AppSpacing.md),
                   ],
                 ),

@@ -22,4 +22,5 @@ abstract class AppAssets {
   const AppAssets._();
 
   static const String googleLogo = 'assets/icons/google.svg';
+  static const String appleLogo = 'assets/icons/apple-logo.svg';
 }
